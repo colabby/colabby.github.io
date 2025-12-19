@@ -1,0 +1,25 @@
+# Project Rules (internal documentation)
+RULES.md
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependencies (if using npm later)
+node_modules/
+
+# Environment variables
+.env
+.env.local

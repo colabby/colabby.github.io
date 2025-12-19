@@ -1,0 +1,165 @@
+/* MTF Memory Font */
+@font-face {
+    font-family: 'MTF Memory';
+    src: url('../assets/fonts/mtf-memory/MTF Memory.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Text outline for ABACAXI */
+.text-outline {
+    text-shadow: 
+        -0.5px -0.5px 0 #000,
+        0.5px -0.5px 0 #000,
+        -0.5px 0.5px 0 #000,
+        0.5px 0.5px 0 #000;
+}
+
+/* Stroke Animation */
+.stroke-animation {
+    -webkit-text-stroke: 3px currentColor;
+    -webkit-text-fill-color: transparent;
+    animation: fillText 2s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes fillText {
+    0% {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 3px;
+    }
+    50% {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 3px;
+    }
+    100% {
+        -webkit-text-fill-color: currentColor;
+        -webkit-text-stroke-width: 0px;
+    }
+}
+
+/* Fade in animation for secondary text */
+.fade-in-up {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.hero-title-animate {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+.hero-subtitle-animate {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.8s;
+}
+
+.hero-cta-animate {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 1.4s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade out animations */
+.fade-out-up {
+    animation: fadeOutUp 0.8s ease-in forwards;
+}
+
+@keyframes fadeOutUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading Screen */
+#loading-screen {
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+
+#loading-screen.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Loader Animation */
+.loader {
+    height: 100px;
+    aspect-ratio: 1;
+    position: relative;
+    --g:/calc(30.259% + 5.027px) calc(30.259% + 5.027px) radial-gradient(#0000 calc(70% - 8px),#000 calc(71% - 8px) 70%,#0000 71%) no-repeat;
+    mask: radial-gradient(100% 100%,#0000 calc((30.259% + 5.027px)/0.964 - 8.306px),#000 calc((30.259% + 5.027px)/0.964 - 8.306px + 1px)) intersect,100% 50% var(--g),81.174% 89.092% var(--g),38.874% 98.746% var(--g),4.952% 71.694% var(--g),4.952% 28.306% var(--g),38.874% 1.254% var(--g),81.174% 10.908% var(--g);
+    filter: blur(12px);
+}
+
+.loader:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: conic-gradient(#0000 35%, #0d5c3a, #0000 65%);
+    animation: l9 2s linear infinite;
+}
+
+@keyframes l9 {
+    to {
+        rotate: 1turn;
+    }
+}
+
+/* Button Style */
+.btn-cartoon {
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    border: 1px solid #000;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.btn-cartoon:hover {
+    opacity: 0.9;
+}
+
+/* Cartoon Card/Container Style */
+.card-cartoon {
+    border: 2px solid #000;
+    border-radius: 12px;
+    box-shadow: 4px 4px 0px #000;
+}

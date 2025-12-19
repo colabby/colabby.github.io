@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coletivo Abacaxi - Fantasia Siamesa. Portfolio do coletivo e informações sobre patrocínio.">
+    <meta name="keywords" content="coletivo abacaxi, festa, evento, patrocínio">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ABACAXI - Fantasia Siamesa">
+    <meta property="og:description" content="Coletivo Abacaxi - Fantasia Siamesa">
+    
+    <title>ABACAXI - Fantasia Siamesa | Coletivo Abacaxi</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Cores vibrantes para títulos
+                        'abacaxi-pink': '#ff69b4',
+                        'abacaxi-yellow': '#ffd700',
+                        
+                        // Opções de fundo escuro - escolha uma!
+                        'abacaxi-bg-yellow': '#b8860b',    // Amarelo escuro (goldenrod)
+                        'abacaxi-bg-green': '#0d5c3a',     // Verde escuro
+                        'abacaxi-bg-blue': '#1e3a8a',      // Azul escuro
+                        'abacaxi-bg-pink': '#9d174d',      // Rosa escuro (magenta)
+                        'abacaxi-bg-purple': '#5b21b6',    // Roxo escuro
+                        
+                        // Cores extras
+                        'abacaxi-green': '#04a85f',
+                        'abacaxi-blue': '#4473ea',
+                        'abacaxi-red': '#f35054',
+                    },
+                    fontFamily: {
+                        'display': ['Anton', 'sans-serif'],
+                        'cursive': ['MTF Memory', 'cursive'],
+                        'body': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- Loading Screen Component -->
+    <div id="loader-component"></div>
+
+    <!-- Hero Component -->
+    <div id="hero-component"></div>
+
+    <!-- About Component -->
+    <div id="about-component"></div>
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
